@@ -14,8 +14,11 @@ Follow these steps to run the script using a virtual environment (pipenv):
 1. **Clone the Repository:**
 
 ```bash
-$ git clone <repository_url>
-$ cd <repository_directory>
+git clone <repository_url>
+```
+
+```bash
+cd <repository_directory>
 ```
 
 
@@ -24,7 +27,7 @@ $ cd <repository_directory>
 Create a new virtual environment using pipenv:
 
 ```bash
-$ pipenv install
+pipenv install
 ```
 
 
