@@ -20,24 +20,34 @@ git clone <repository_url>
 ```bash
 cd <repository_directory>
 ```
-
-
-2. **Set Up a Virtual Environment:**
-
-Create a new virtual environment using pipenv:
-
-```bash
-pipenv install
+2. **Navigate to the project directory:**
+```shell
+cd Encryption-Decryption
 ```
+3. **Create a virtual environment:**
 
-
-3. **Activate the Virtual Environment:**
-
-```bash
-pipenv shell
+On macOS and Linux:
+```shell
+python3 -m venv venv
 ```
-
-4. **Running the Script:**
+On Windows:   
+```shell
+py -m venv venv
+```
+5. **Activate the virtual environment:**
+On macOS and Linux:
+```shell
+source venv/bin/activate
+```
+On Windows:
+```shell
+venv\Scripts\activate
+```
+6. **Install the required packages:**
+```shell
+pip3 install -r requirements.txt
+```
+This will install all the necessary dependencies for the project in the python environment.
 
 Run the Python script using the following command:
 
@@ -60,3 +70,36 @@ The script will display the result on the console. Additionally, the output will
 - The seed you provide will determine the randomness of the encryption. Using the same seed for decryption as used for encryption will yield the original text.
 
 - For text input, simply type or paste your text when prompted. Alternatively, you can provide the input by placing it in the `input.txt` file.
+
+Once you're done, you can exit the venv:
+
+On macOS and Linux:
+
+```shell
+deactivate
+```
+
+On Windows:
+```shell
+deactivate.bat
+```
+
+You can also delete the files associated with it if you want, but you don't have to.
+This action cannot be undone.
+
+On macOS and Linux:
+
+```shell
+rm -r venv
+```
+
+On Windows:
+```shell
+rmdir /s /q venv
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+Feel free to modify the instructions based on your project's specific setup and requirements.
